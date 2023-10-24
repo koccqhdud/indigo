@@ -1,5 +1,5 @@
 @charset "utf-8";
-html,head,title,body,div,span,header,section,article,aside,footer,main,strong,h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,img,picture,video,audio,table,tr,td,th,form,label,input,select,textarea,button,nav,hr,br{
+html,head,title,body,div,span,header,section,article,aside,footer,main,strong,h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,img,picture,video,audio,table,tr,td,th,form,label,input,select,textarea,button,nav,hr,br,iframe{
   box-sizing:border-box;  
   margin:0;
   padding:0;
@@ -26,6 +26,15 @@ input,textarea,select{
 address{
   font-style:normal;
 }
+iframe{
+  display:block;
+  width:100%;
+}
 ::placeholder{
   color:#000;
+}
+.clearfix::after{
+  content:'';
+  display:block;
+  clear:both;
 }
